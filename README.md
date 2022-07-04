@@ -9,6 +9,7 @@ Oversampling using SMOTE and naive random oversampling is followed by undersampl
 
 #### Naive Random Oversampling Using RandomOversampler
 
+<<<<<<< HEAD
 - A balanced accuracy score of 64% is achieved. 
 - In the high_risk segment, the precision is 1% and the sensitivity is 61%. 
 - With a precision score of 100% and a sensitivity score of 68%, low_risk scores perfectly. 
@@ -27,11 +28,39 @@ Oversampling using SMOTE and naive random oversampling is followed by undersampl
 - For high_risk, the precision and sensitivity scores are 1% and 59% respectively.
 - Low_risk precision score is 100% and its sensitivity score is 43%.
 - In general, the precision score is 99%, while the sensitivity score is 44%.
+=======
+![Naive_Random_Oversampling](https://user-images.githubusercontent.com/99752443/177029636-a21c4d0d-d3c0-4d13-b1ac-8116bd2db49b.png)
+
+- A balanced accuracy score of 65% is achieved. 
+- In the high_risk segment, the precision is 1% and the sensitivity is 63%. 
+- With a precision score of 100% and a sensitivity score of 67%, low_risk scores perfectly. 
+- With a precision score of 99%, and a sensitivity score of 67%, overall the performance is excellent. 
+
+#### SMOTE Oversampling
+
+![Smote_Oversampling](https://user-images.githubusercontent.com/99752443/177029647-38752f48-9769-4216-8897-a15224b7cc8e.png)
+
+- An accuracy score of 63% is considered balanced.
+- With a sensitivity score of 62%, high_risk has a percision score of 1%.
+- With a sensitivity score of 63%, low_risk has 100% precision.
+- This study has a precision rating of 99% is achieved with a sensitivity of 63%.
+
+#### Undersampling Using ClusterCentroids
+
+![Undersampling](https://user-images.githubusercontent.com/99752443/177029653-d07bfe21-b231-4c61-a2ef-d944eda98377.png)
+
+- It is 53% accurate on a balanced basis.
+- For high_risk, the precision and sensitivity scores are 1% and 61 % respectively.
+- Low_risk precision score is 100% and its sensitivity score is 45%.
+- In general, the precision score is 99%, while the sensitivity score is 45%.
+>>>>>>> eda8f2a3dd3ed89504c3806ac0742b4a5f960d06
 
 ### SMOTEENN Algorithm to Predict Credit Risk
 In order to determine whether the later SMOTEENN algorithm works better than the earlier resampling models, I applied a combinatorial approach of over-and under-sampling.
 
 #### Combination (Over and Under) Sampling Using SMOTEENN
+
+![combination_sampling](https://user-images.githubusercontent.com/99752443/177029680-e0bed5c3-fc40-4c28-ad56-ebf5313262f6.png)
 
 - 64% is the balanced basis.
 - High_risk has a precision score of 1% and a sensitivity score of 70%.
@@ -43,6 +72,8 @@ Lastly, I trained and tested two ensemble classifiers to predict credit risk, Ba
 
 #### Balanced Random Forest Classifier
 
+![balaned_random_forester_classifier](https://user-images.githubusercontent.com/99752443/177029692-daa607f3-94d8-4cb0-8018-df175bc74272.png)
+
 - An accurate balance score of 79% is achieved.
 - In the high_risk group, precision is 4%, sensitivity is 67%.
 - Low_risk has a precision of 100% and a sensitivity of 91%.
@@ -50,10 +81,16 @@ Lastly, I trained and tested two ensemble classifiers to predict credit risk, Ba
 
 #### Easy Ensemble AdaBoost Classifier
 
+![easy_Ensemble_Classifier](https://user-images.githubusercontent.com/99752443/177029704-01a75338-f51b-438c-9a1c-a0de5d9da3ec.png)
+
 - 93% is the balanced accuracy score.
 - High_risk score has a precision of 7% and a sensitivity of 91%.
 - Low_risk score has a precision of 100% and a sensitivity of 94%.
 - There is an overall precision score of 99% and a sensitivity score of 94%.
 
 ## Summary
+<<<<<<< HEAD
 With the exception of undersampling, where the balanced accuracy score was 51%, the first three resampling models and the combination sampling model all had balanced accuracy scores in the range of 64-66%. As compared to Ensemble Classifier whose balanced accuracy score was 79% and Easy Ensemble Classifier's balanced accuracy score of 93%. To find models that assess credit risk, we should specifically focus on the high_risk variable. Our goal is to achieve high precision scores as precision indicates how reliable a positive classification is, and we also want to achieve high sensitivity scores since sensitivity measures how many loans are correctly classified as high risk. In terms of precision scores, each of the three resampling models and the combination sampling model achieved a precision score of 1%. Only the SMOTEENN model received a sensitivity score higher than 70%, with the scores ranging from 59-67%. Most notably, the EasyEnsembleClassifier scored 7% precision and 91% sensitivity, most impressive among the ensemble classifiers. With 100% precision and 94% sensitivity, EasyEnsembleClassifier also had the highest score for low_risk. Due to its high balanced accuracy score, high precision score, and high sensitivty score among all the models, I would recommend using the EasyEnsembleClassifier.
+=======
+With the exception of undersampling, where the balanced accuracy score was 53%, the first three resampling models and the combination sampling model all had balanced accuracy scores in the range of 63-65%. As compared to Ensemble CLassifier whose balanced accuracy score was 79% and Easy Ensemble Classifier's balanced accuracy score of 93%, this is significantly lower. To find models that assess credit risk, we should specifically focus on the high_risk variable. Our goal is to achieve high precision scores as precision indicates how reliable a positive classification is, and we also want to achieve high sensitivity scores since sensitivity measures how many loans are correctly classified as high risk. In terms of precision scores, each of the three resampling models and the combination sampling model achieved a precision score of 1%. Only the SMOTEENN model received a sensitivity score higher than 70%, with the scores ranging from 61-63%. Most notably, the EasyEnsembleClassifier scored 7% precision and 91% sensitivity, most impressive among the ensemble classifiers. With 100% precision and 94% sensitivity, EasyEnsembleClassifier also had the highest score for low_risk. Due to its high balanced accuracy score, high precision score, and high sensitivty score among all the models, I would recommend using the EasyEnsembleClassifier.
+>>>>>>> eda8f2a3dd3ed89504c3806ac0742b4a5f960d06
