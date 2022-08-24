@@ -1,4 +1,4 @@
-# Credit Rish Analysis Using Supervised Machine Learning (Module 17 Challenge)
+# Credit Risk Analysis Using Supervised Machine Learning (Module 17 Challenge)
 
 ## Overview
 To determine if these machine learning models could accurately predict credit risk by analyzing a credit card dataset, this study evaluated their performance.
